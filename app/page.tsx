@@ -1,8 +1,16 @@
+'use client';
+
+import { useState } from 'react';
 import Scanner from '@/components/Scanner';
+import SplashScreen from '@/components/SplashScreen';
 
 export default function Home() {
+    const [showSplash, setShowSplash] = useState(true);
+
     return (
         <main className="relative min-h-screen flex flex-col items-center justify-start overflow-hidden bg-black text-white selection:bg-blue-500/30">
+
+            {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
 
             {/* Animated Background */}
             <div className="fixed inset-0 w-full h-full pointer-events-none">
@@ -18,10 +26,10 @@ export default function Home() {
             {/* Header */}
             <nav className="z-50 w-full px-6 py-6 flex items-center justify-between glass-panel sticky top-0 border-b border-white/5 bg-black/50 backdrop-blur-xl">
                 <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center font-bold text-lg">A</div>
-                    <span className="font-bold text-lg tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-neutral-400">Assignment.AI</span>
+                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center font-bold text-lg">D</div>
+                    <span className="font-bold text-lg tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-neutral-400">DizitalWing</span>
                 </div>
-                <div className="text-sm text-neutral-400">v1.0.0</div>
+                <div className="text-sm text-neutral-400">v2.0</div>
             </nav>
 
             {/* Hero Section */}
