@@ -26,7 +26,8 @@ export default function Home() {
             {/* Header */}
             <nav className="z-50 w-full px-6 py-6 flex items-center justify-between glass-panel sticky top-0 border-b border-white/5 bg-black/50 backdrop-blur-xl">
                 <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center font-bold text-lg">D</div>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/dizitalwing-logo.jpg" alt="Logo" className="w-10 h-10 rounded-full object-cover" />
                     <span className="font-bold text-lg tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-neutral-400">DizitalWing</span>
                 </div>
                 <div className="text-sm text-neutral-400">v2.0</div>

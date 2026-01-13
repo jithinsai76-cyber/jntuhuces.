@@ -36,7 +36,7 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
                         ease: [0.22, 1, 0.36, 1]
                     }}
                     /* eslint-disable-next-line @next/next/no-img-element */
-                    src="/logo.jpg"
+                    src="/dizitalwing-logo.jpg"
                     alt="Dizital Wing"
                     className="relative z-10 w-48 h-48 md:w-64 md:h-64 object-contain rounded-full border border-white/10 shadow-2xl"
                 />
